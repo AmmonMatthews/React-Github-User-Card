@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import {Wrapper, Card} from './StyledComponents/StyledFollowers';
 
-import logo from './logo.svg';
 import './App.css';
 import GitHubCard from './components/GitHubCard';
 import FollowersCard from './components/FollowersCard';

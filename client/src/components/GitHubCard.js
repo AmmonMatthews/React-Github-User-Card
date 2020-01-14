@@ -14,7 +14,7 @@ function GitHubCard ({user}) {
             <h3>{user.name} </h3>
             <p>{user.company}</p>
             <p>{user.location}</p>
-            <p>Bio:{user.bio}</p>
+            <p>{user.bio}</p>
             </div>
             
             
