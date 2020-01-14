@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Image } from "../StyledComponents/StyledFollowers";
 
 
 function FollowersCard ({person}) {
@@ -8,7 +8,7 @@ function FollowersCard ({person}) {
     return(
         <div>
             <div>
-                <img src={person.avatar_url}></img>
+                <Image src={person.avatar_url}/>
             </div>
             <div>
             <h3>{person.login} </h3>

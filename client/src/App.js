@@ -1,5 +1,6 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import {Wrapper, Card} from './StyledComponents/StyledFollowers';
 
 import logo from './logo.svg';
 import './App.css';
@@ -42,15 +43,20 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <GitHubCard key={this.state.user.id} user={this.state.user}/>
-        
+        <GitHubCard className="border" key={this.state.user.id} user={this.state.user}/>
+        <Wrapper>
         {this.state.followers.map(follower => {
           return (
-          <div>
-            <FollowersCard key={follower.id} person={follower} />
+            <Card className="border">
+              <FollowersCard key={follower.id} person={follower} />
+            </Card>
+            
           
-          </div>)
+          )
         })}
+
+        </Wrapper>
+        
         
       </div>
     );

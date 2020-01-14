@@ -2,12 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-around;
+   width: 70%;
+   margin: 10px auto;
+   font-size: 1.5rem;
+   padding: 2% 0;
+
 `;
 
 const Image = styled.img`
-    width: 50%;
+    width: 30%;
+    border-radius:10px;
 `;
 
 

@@ -1,12 +1,12 @@
 import React from "react";
-import  {Wrapper, Image } from "../StyledComponents/StyledGitHubCard"
+import {Wrapper, Image } from "../StyledComponents/StyledGitHubCard"
 
 
 function GitHubCard ({user}) {
 
     console.log(user)
     return(
-        <Wrapper>
+        <Wrapper className="border">
             <div>
                 <Image src={user.avatar_url}/>
             </div>
